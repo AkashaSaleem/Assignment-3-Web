@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Tourist Spots</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .nav-link {
+            font-size: 1.1rem;
+            font-weight: 500;
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: rgb(180, 12, 82);
+            transition: width 0.3s;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .jumbotron {
+            background: url('https://source.unsplash.com/random/1600x900') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .intro-section {
+            padding: 60px 0;
+        }
+        .intro-section h2 {
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+        }
+        .intro-section p {
+            font-size: 1.2rem;
+        }
+        .card {
+            margin: 20px 0;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 10px 10px 5px 12px lightblue;
+        }
+        .card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+        }
+        .footer-icons a {
+            transition: transform 0.3s;
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5rem;
+        }
+        .footer-icons a:hover {
+            transform: scale(1.05);
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">My Website</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="Fav per.html">Favorite Personalities</a></li>
+            <li class="nav-item"><a class="nav-link" href="fav city.html">Favorite Cities</a></li>
+            <li class="nav-item"><a class="nav-link" href="fav spot.html">Favorite Tourist Spots</a></li>
+            <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Header Banner -->
+<div class="jumbotron jumbotron-fluid text-center">
+    <div class="container">
+        <h1 class="display-4">Favorite Tourist Spots</h1>
+        <p class="lead">Discover the most beautiful places to visit.</p>
+    </div>
+</div>
+
+<!-- Favorite Tourist Spots Section -->
+<section class="intro-section text-center">
+    <div class="container">
+        <h2>My Favorite Tourist Spots</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/random/400x400?eiffel_tower" class="card-img-top" alt="Eiffel Tower">
+                    <div class="card-body">
+                        <h5 class="card-title">Eiffel Tower</h5>
+                        <p class="card-text">The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France.</p>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Scxs7L0vhZ4" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/random/400x400?great_wall" class="card-img-top" alt="Great Wall of China">
+                    <div class="card-body">
+                        <h5 class="card-title">Great Wall of China</h5>
+                        <p class="card-text">The Great Wall of China is a series of fortifications that were built across the northern borders of ancient Chinese states and Imperial China.</p>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9dIyk65vR-g" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/random/400x400?machu_picchu" class="card-img-top" alt="Machu Picchu">
+                    <div class="card-body">
+                        <h5 class="card-title">Machu Picchu</h5>
+                        <p class="card-text">Machu Picchu is a 15th-century Inca citadel located in the Eastern Cordillera of southern Peru on a mountain ridge.</p>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3jZ5vnv-LZc" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/random/400x400?grand_canyon" class="card-img-top" alt="Grand Canyon">
+                    <div class="card-body">
+                        <h5 class="card-title">Grand Canyon</h5>
+                        <p class="card-text">The Grand Canyon is a steep-sided canyon carved by the Colorado River in Arizona, United States.</p>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dGGWu_noS3w" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/random/400x400?santorini" class="card-img-top" alt="Santorini">
+                    <div class="card-body">
+                        <h5 class="card-title">Santorini</h5>
+                        <p class="card-text">Santorini is one of the Cyclades islands in the Aegean Sea. It was devastated by a volcanic eruption in the 16th century BC, forever shaping its rugged landscape.</p>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/huqJUghX26Y" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/random/400x400?statue_of_liberty" class="card-img-top" alt="Statue of Liberty">
+                    <div class="card-body">
+                        <h5 class="card-title">Statue of Liberty</h5>
+                        <p class="card-text">The Statue of Liberty is a colossal neoclassical sculpture on Liberty Island in New York Harbor in New York City, in the United States.</p>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Y3utCntXrPo" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+    <div class="container">
+        <div class="footer-icons">
+            <a href="https://www.linkedin.com" target="https://www.linkedin.com/in/akasha-saleem-15285623a/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com" target="https://www.facebook.com/profile.php?id=100080805505791"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com" target="https://twitter.com/home"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="https://www.instagram.com/_itsmeakasha?igsh=MWhwcnI3cDg1aGMyeg=="><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2024 My Personal Website. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

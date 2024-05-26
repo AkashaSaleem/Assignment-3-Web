@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .nav-link {
+            font-size: 1.1rem;
+            font-weight: 500;
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: rgb(180, 12, 82);
+            transition: width 0.3s;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .jumbotron {
+            background: url('https://source.unsplash.com/random/1600x900') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .contact-section {
+            padding: 60px 0;
+        }
+        .contact-section h2 {
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+        }
+        .contact-section p {
+            font-size: 1.2rem;
+        }
+        .form-control {
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+        }
+        .footer-icons1{
+            background-color: rgba(0, 0, 255, 0.753);
+        }
+        .footer-icons1 a {
+            transition: transform 0.3s;
+            color: rgb(255, 255, 255);
+            margin: 0 10px;
+            font-size: 1.5rem;
+        }
+        .footer-icons1 a:hover {
+            transform: scale(1.05);
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">My Website</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="Fav per.html">Favorite Personalities</a></li>
+            <li class="nav-item"><a class="nav-link" href="fav city.html">Favorite Cities</a></li>
+            <li class="nav-item"><a class="nav-link" href="fav spot.html">Favorite Tourist Spots</a></li>
+            <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Header Banner -->
+<div class="jumbotron jumbotron-fluid text-center">
+    <div class="container">
+        <h1 class="display-4">Contact Me</h1>
+        <p class="lead">I'd love to hear from you! Feel free to reach out using the form below.</p>
+    </div>
+</div>
+
+<!-- Contact Section -->
+<section class="contact-section text-center">
+    <div class="container">
+        <h2>Contact Information</h2>
+        <p>Feel free to reach out to me via email or through my social media channels.</p>
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Contact Form</h4>
+                <form>
+                    <input type="text" class="form-control" placeholder="Your Name" required>
+                    <input type="email" class="form-control" placeholder="Your Email" required>
+                    <textarea class="form-control" rows="1" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h4>Contact Details</h4>
+                <p><i class="fas fa-envelope"></i> akashakamboh@gamil.com</p>
+                <p><i class="fas fa-phone"></i> +92 3057570765</p>
+                <h4>Follow Me</h4>
+                <div class="footer-icons1">
+                    <a href="https://www.linkedin.com" target="https://www.linkedin.com/in/akasha-saleem-15285623a/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com" target="https://www.facebook.com/profile.php?id=100080805505791"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.twitter.com" target="https://twitter.com/home"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com" target="https://www.instagram.com/_itsmeakasha?igsh=MWhwcnI3cDg1aGMyeg=="><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+    <div class="container">
+        <div class="footer-icons">
+            <a href="https://www.linkedin.com" target="https://www.linkedin.com/in/akasha-saleem-15285623a/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com" target="https://www.facebook.com/profile.php?id=100080805505791"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com" target="https://twitter.com/home"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="https://www.instagram.com/_itsmeakasha?igsh=MWhwcnI3cDg1aGMyeg=="><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2024 My Personal Website. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
